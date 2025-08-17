@@ -59,5 +59,23 @@
     const lastLang = document.querySelector("li:last-child");
     //remove it
     lastLang.remove();
+
+    <div id="box">
+  Hi <span style="display:none">Hidden</span>
+</div>
+
+let el = document.getElementById("box");
+
+console.log(el.innerHTML);   // "Hi <span style="display:none">Hidden</span>"
+console.log(el.outerHTML);   // "<div id="box">Hi <span style="display:none">Hidden</span></div>"
+console.log(el.innerText);   // "Hi"
+console.log(el.textContent); // "Hi Hidden"
+
+
+
+
+
+    
   </script>
 </html>
+
